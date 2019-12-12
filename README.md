@@ -2,10 +2,6 @@
 ### Description
 Use Convolutional Recurrent Neural Network to recognize the Handwritten line text image without pre segmentation into words or characters. Use CTC loss Function to train.
 
-### Why Deep Learning?
-![Why Deep Learning](images/WhyDeepLearning.png?raw=true "Why Deep Learning")
-> Deep Learning self extracts features with a deep neural networks and classify itself. Compare to traditional Algorithms it performance increase with Amount of Data.
-
 ## <i> Basic Intuition on How it Works.
 ![Step_wise_detail](images/Step_wise_detail_of_workflow.png?raw=true "Step_Wise Detail")
 * First Use Convolutional Recurrent Neural Network to extract the important features from the handwritten line text Image.
@@ -30,12 +26,7 @@ Use Convolutional Recurrent Neural Network to recognize the Handwritten line tex
 2. Flask
 3. Numpy
 4. OpenCv 3
-5. Spell Checker `autocorrect` >=0.3.0 ``pip install autocorrect``
-
-#### Dataset Used
-* IAM dataset download from [here](http://www.fki.inf.unibe.ch/databases/iam-handwriting-database)
-* Only needed the lines images and lines.txt (ASCII).
-* Place the downloaded files inside data directory  
+5. autocorrect
 
 ###### The Trained model is not available right now. You can trained it by yourself.
 
@@ -75,4 +66,3 @@ With Correction clothed leaf by leaf with the dioappoistmest
 * Better Image preprocessing such as: reduce backgoround noise to handle real time image more accurately.
 * Better Decoding approach to improve accuracy. Some of the CTC Decoder found [here](https://github.com/githubharald/CTCDecoder)  
 
-*This is part of my last semester project of Computer Science Program From Tribhuvan University. July 2019*
